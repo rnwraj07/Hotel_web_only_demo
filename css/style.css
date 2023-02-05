@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #fff;
+    --primary-color: #aa8453;
+    --black-color: rgb(0, 0, 0);
+    --primary-font: 'Barlow Condensed';
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ...... ...... ...... ......background-image...... ...... ...... ...... */
+
+.bgimg {
+    background-image: url(../image/bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+    position: relative;
+}
+
+.box {
+    background-color: var(--black-color);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: .1;
+}
+
+/*  ...... ...... ...... ......header...... ...... ...... ...... */
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 40px 0;
+    z-index: 1;
+}
+
+.container .logo img {
+    width: 180px;
+}
+
+.container nav ul li {
+    list-style: none;
+}
+
+.container nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-family: var(--primary-font);
+    margin: 0 15px;
+    letter-spacing: 1px;
+}
+
+/*  ...... ...... ...... ......header section...... ...... ...... ...... */
+
+header section {
+    padding: 150px 200px;
+}
+
+header section .img1 {
+    margin-left: 300px;
+}
+
+header section .img1 img {
+    width: 17px;
+}
+
+header section p {
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 30px;
+    font-family: var(--primary-font);
+    letter-spacing: 5px
+}
+
+header section h1 {
+    color: var(--white-color);
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 5PX;
+}
+
+header section .btn {
+    margin-left: 255px;
+}
+
+header section .btn a {
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    z-index: 1;
+    font-family: var(--primary-font);
+    margin-top: 30px;
+    transition: all .5s;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    border-color: transparent;
+    border: .5px solid rgb(177, 177, 177);
+    padding: 15px 30px;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+header section .btn a::before {
+    content: '';
+    position: absolute;
+    left: -110%;
+    top: 0;
+    z-index: -1;
+    border: 1px solid var(--white-color);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background-color: var(--white-color);
+    transition: all .5s;
+}
+
+header section .btn a:hover::before {
+    left: 0;
+    top: 0;
+}
+
+header section .btn a:hover {
+    color: var(--black-color);
+}
+
+/*  ...... ...... ...... ......1 section...... ...... ...... ...... */
+
+.main {
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.main .container .about {
+    width: 50%;
+}
+
+.main .container .about2 {
+    width: 50%;
+    position: relative;
+    padding: 20px;
+}
+
+.main .container .about .star img {
+    width: 20px;
+}
+
+.main .container .about .content p {
+    color: var(--black-color);
+    letter-spacing: 3px;
+    font-family: var(--primary-font);
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.main .container .about .content h1 {
+    color: var(--black-color);
+    font-weight: 100;
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+.main .container .about .content h4 {
+    color: var(--black-color);
+    font-family: var(--primary-font);
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 17px;
+    word-spacing: 3px;
+}
+
+.main .container .about .contact {
+    margin-top: 20px;
+}
+
+.main .container .about .contact .info {
+    margin-left: 20px;
+}
+
+.main .container .about .contact .info p {
+    font-family: var(--primary-font);
+    color: var(--black-color);
+}
+
+.main .container .about .contact .info h1 {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.main .container .about .contact .call img {
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.main .container .about2 img {
+    width: 250px;
+}
+
+.main .container .about2 .image1 {
+    position: absolute;
+    top: 80px;
+}
+
+.main .container .about2 .image2 {
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+
+/*  ...... ...... ...... ......2 section...... ...... ...... ...... */
+
+
+.main1 {
+    background-color: #F8F5F0;
+    padding: 130px 0;
+}
+
+.main1 .container p {
+    color: var(--black-color);
+    letter-spacing: 3px;
+    font-family: var(--primary-font);
+    font-weight: 300;
+}
+
+.main1 .container h1 {
+    color: var(--black-color);
+    font-weight: 100;
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+.main1 .container .img1 {
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main1 .container .img1 .box {
+    color: var(--black-color);
+    position: absolute;
+    z-index: 1;
+    transition: all .5s;
+    opacity: .2;
+}
+
+.main1 .container .img1:hover .box {
+    opacity: .5;
+}
+
+.main1 .container .img1 img {
+    width: 360px;
+    display: block;
+    transition: all .5s;
+}
+
+.main1 .container .img1:hover img {
+    transform: scale(1.1);
+}
+
+.main1 .container .img2 {
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main1 .container .img2 .box {
+    color: var(--black-color);
+    position: absolute;
+    z-index: 9;
+    transition: all .5s;
+    opacity: .2;
+}
+
+.main1 .container .img2:hover .box {
+    opacity: .5;
+}
+
+.main1 .container .img2 img {
+    width: 555px;
+    transition: all .5s;
+    display: block;
+}
+
+.main1 .container .img2:hover img {
+    transform: scale(1.1);
+}
+
+.main1 .container .img1 .box1 {
+    position: absolute;
+    z-index: 9;
+    transition: all .5s;
+    width: 100%;
+    top: 360px;
+    padding: 20px;
+}
+
+.main1 .container .img1 .box1 h3 {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    font-family: var(--primary-font);
+}
+
+.main1 .container .img1 .box1 h1 {
+    font-size: 30px;
+    color: var(--white-color);
+}
+
+.main1 .container .img1 .box1 .line {
+    height: 1px;
+    width: 18%;
+    background-color: #666666;
+    margin-top: 15px;
+    transition: all 1s;
+}
+
+.main1 .container .img1 .box1:hover .line {
+    width: 100%;
+}
+
+.main1 .container .img1 .box1 ul li {
+    list-style: none;
+}
+
+.main1 .container .img1 .box1 ul li i {
+    color: var(--white-color);
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.main1 .container .img1 .box1:hover {
+    top: 320px;
+}
+
+
+.main1 .container .img2 .box1 {
+    position: absolute;
+    z-index: 9;
+    transition: all .5s;
+    width: 100%;
+    top: 225px;
+    padding: 20px;
+}
+
+.main1 .container .img2 .box1 h3 {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    font-family: var(--primary-font);
+}
+
+.main1 .container .img2 .box1 h1 {
+    font-size: 30px;
+    color: var(--white-color);
+}
+
+.main1 .container .img2 .box1 .line {
+    height: 1px;
+    width: 18%;
+    background-color: #666666;
+    margin-top: 15px;
+    transition: all 1s;
+}
+
+.main1 .container .img2 .box1:hover .line {
+    width: 100%;
+}
+
+.main1 .container .img2 .box1 ul li {
+    list-style: none;
+}
+
+.main1 .container .img2 .box1 ul li i {
+    color: var(--white-color);
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.main1 .container .img2 .box1:hover {
+    top: 190px;
+}
+
+/*  ...... ...... ...... ......3 section...... ...... ...... ...... */
+
+.main2 {
+    background-color: #222222;
+    padding: 130px 0;
+}
+
+.main2 .container .about {
+    width: 30%;
+}
+
+.main2 .container .about2 {
+    width: 70%;
+}
+
+.main2 .container .about .content p {
+    color: var(--primary-color);
+    letter-spacing: 3px;
+    font-family: var(--primary-font);
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.main2 .container .about .content h1 {
+    color: var(--white-color);
+    font-weight: 100;
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+.main2 .container .about .content h4 {
+    color: #adadad;
+    font-family: var(--primary-font);
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 17px;
+    word-spacing: 3px;
+}
+
+.main2 .container .about .contact {
+    margin-top: 30px;
+}
+
+.main2 .container .about .contact .info {
+    margin-left: 20px;
+}
+
+.main2 .container .about .contact .info p {
+    font-family: var(--primary-font);
+    color: #adadad;
+}
+
+.main2 .container .about .contact .info h1 {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.main2 .container .about .contact .call img {
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+.main2 .container .about2 .content .set1 {
+    width: 380px;
+    background-color: #f8f5f0;
+    margin-left: 25px;
+}
+
+.main2 .container .about2 .content .set1 h1 {
+    font-weight: 100;
+    padding: 25px;
+}
+
+.main2 .container .about2 .content .set1 img {
+    width: 380px;
+    display: block;
+}
+
+.main2 .container .about2 .content .set2 {
+    width: 380px;
+    background-color: #f8f5f0;
+    margin: 0 15px;
+}
+
+.main2 .container .about2 .content .set2 img {
+    width: 380px;
+    display: block;
+}
+
+.main2 .container .about2 .content .set2 h1 {
+    font-weight: 100;
+    padding: 25px;
+}
